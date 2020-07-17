@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import Button from './Button';
 
 import logo from '../../assets/logo-white.png';
-import '../../styles/Logo.css';
 
 const Logo = () => {
   return (
