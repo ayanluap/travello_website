@@ -17,7 +17,7 @@ const FlipingCards = () => {
                   The sea explorer
                 </span>
               </h4>
-              <p className="card__details">
+              <div className="card__details">
                 <ul>
                   <li>5 Day tour</li>
                   <li>Up to 30 Peoples</li>
@@ -25,7 +25,7 @@ const FlipingCards = () => {
                   <li>Sleep in cozy Hotels</li>
                   <li>Difficulty: Easy</li>
                 </ul>
-              </p>
+              </div>
             </div>
             <div className="card__side card__side--back card__side--back-1">
               <div className="card__cta">
@@ -49,7 +49,7 @@ const FlipingCards = () => {
                   The forest hiker
                 </span>
               </h4>
-              <p className="card__details">
+              <div className="card__details">
                 <ul>
                   <li>5 Day tour</li>
                   <li>Up to 30 Peoples</li>
@@ -57,7 +57,7 @@ const FlipingCards = () => {
                   <li>Sleep in cozy Hotels</li>
                   <li>Difficulty: Easy</li>
                 </ul>
-              </p>
+              </div>
             </div>
             <div className="card__side card__side--back card__side--back-2">
               <div className="card__cta">
@@ -81,7 +81,7 @@ const FlipingCards = () => {
                   The snow adventure
                 </span>
               </h4>
-              <p className="card__details">
+              <div className="card__details">
                 <ul>
                   <li>5 Day tour</li>
                   <li>Up to 30 Peoples</li>
@@ -89,7 +89,7 @@ const FlipingCards = () => {
                   <li>Sleep in cozy Hotels</li>
                   <li>Difficulty: Easy</li>
                 </ul>
-              </p>
+              </div>
             </div>
             <div className="card__side card__side--back card__side--back-3">
               <div className="card__cta">

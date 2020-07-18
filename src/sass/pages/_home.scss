@@ -24,6 +24,36 @@
 
 .section-tours {
   background-color: $grey-1;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 10rem 0;
   margin-top: -10rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative;
+}
+.section-form {
+  padding: 15rem 0;
+  background: linear-gradient(to right bottom, $light-green, $dark-green);
+}
+
+.form {
+  padding: 5rem;
+  background: linear-gradient(
+      105deg,
+      rgba($light, 0.8) 0%,
+      rgba($light, 0.8) 50%,
+      transparent 50%
+    ),
+    url('assets/nat-10.jpg') no-repeat center center/cover;
+  margin: 0 auto;
+  height: 50rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.3);
+
+  &__container {
+    width: 50%;
+    padding: 2rem;
+  }
 }
