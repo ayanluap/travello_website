@@ -8,29 +8,23 @@ import Form from './components/sections/Form';
 
 // import SmoothScrollbar from 'smooth-scrollbar';
 // import OverscrollPlugin from 'smooth-scrollbar/plugins/overflow';
-import Scrollbar from 'react-smooth-scrollbar';
+// import Scrollbar from 'react-smooth-scrollbar';
 import './App.css';
+import Footer from './components/sections/Footer';
 
 function App() {
   // let myScrollbar = useRef();
 
   return (
-    <Scrollbar
-      damping={0.5}
-      thumbMinSize={10}
-      // syncCallbacks={boolean}
-      renderByPixels={true}
-      alwaysShowTracks={false}
-      continuousScrolling={true}
-      // wheelEventTarget={myScrollbar}
-    >
+    <div>
       <Header />
       <Main />
       <SimpleCard />
       <FlipingCards />
       <Stories />
       <Form />
-    </Scrollbar>
+      <Footer />
+    </div>
   );
 }
 

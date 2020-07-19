@@ -38,7 +38,7 @@ const Form = () => {
                 </label>
               </div>
 
-              <div className="form-content__group">
+              <div className="form-content__group u-margin-bottom-med">
                 <div className="form-content__radio-group">
                   <input
                     type="radio"
@@ -63,6 +63,12 @@ const Form = () => {
                     Large tour group
                   </label>
                 </div>
+              </div>
+
+              <div className="form-content__group">
+                <button type="submit" className="btn btn--green">
+                  Next step &rarr;
+                </button>
               </div>
             </form>
           </div>
