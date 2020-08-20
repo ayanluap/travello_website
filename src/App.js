@@ -1,4 +1,6 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import NavigationBar from './components/sections/NavigationBar';
 import Header from './components/sections/Header';
 import Main from './components/sections/Main';
 import SimpleCard from './components/sections/SimpleCard';
@@ -16,7 +18,8 @@ function App() {
   // let myScrollbar = useRef();
 
   return (
-    <div>
+    <Router>
+      <NavigationBar />
       <Header />
       <Main />
       <SimpleCard />
@@ -24,7 +27,7 @@ function App() {
       <Stories />
       <Form />
       <Footer />
-    </div>
+    </Router>
   );
 }
 

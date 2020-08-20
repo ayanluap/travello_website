@@ -40,7 +40,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-1-of-2">
-          <p className="footer__copyright">Built by Ayan Paul </p>
+          <p className="footer__copyright">
+            Built by Ayan Paul. <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quam
+            sapiente, neque architecto a pariatur corporis aperiam deleniti
+            adipisci rerum asperiores ad perferendis natus facilis molestiae
+            odio ratione deserunt? Magnam!
+          </p>
         </div>
       </div>
     </footer>
