@@ -7,6 +7,10 @@
   box-shadow: 0 1.5rem 4rem rgba($black, 0.3);
   transition: all 0.3s;
 
+  @include respond(tab-port) {
+    padding: 1.7rem;
+  }
+
   &__icon {
     font-size: 5rem;
     background: linear-gradient(to right, $light-green, $dark-green);

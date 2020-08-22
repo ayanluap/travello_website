@@ -13,6 +13,12 @@
     right: 6rem;
     z-index: 200;
     box-shadow: 0 1rem 3rem rgba($black, 0.2);
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -24,8 +30,14 @@
     right: 6.5rem;
     background: radial-gradient($light-green, $dark-green);
     z-index: 100;
-    transition: all 0.3s ease;
-    // transform: scale(100);
+    transition: all 0.3s cubic-bezier(0.83, 0, 0.17, 1);
+
+    @include respond(tab-port) {
+      height: 5rem;
+      width: 5rem;
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
@@ -33,11 +45,11 @@
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     z-index: 150;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
   &__list {
@@ -52,6 +64,10 @@
 
   &__item {
     margin: 1rem;
+
+    @include respond(phone) {
+      margin: 2rem;
+    }
   }
 
   &__link {
@@ -67,6 +83,11 @@
       background-image: linear-gradient(120deg, transparent 50%, $light 50%);
       background-size: 220%;
       transition: all 0.3s ease-in;
+
+      @include respond(phone) {
+        font-size: 2rem;
+        background-size: 250%;
+      }
     }
 
     &:hover,
@@ -80,8 +101,68 @@
   &__checkbox:checked ~ &__background {
     transform: scale(100);
   }
+
   &__checkbox:checked ~ &__nav {
     opacity: 1;
+    left: 0;
     pointer-events: initial;
+  }
+
+  &__ham {
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &,
+    &::before,
+    &::after {
+      height: 0.2rem;
+      width: 3.5rem;
+      right: 0;
+      background-color: $grey-3;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+    &::after {
+      top: 1rem;
+    }
+  }
+
+  &__button:hover &__ham {
+    &::before,
+    &::after {
+      width: 2rem;
+      right: 0;
+    }
+  }
+
+  &__checkbox:checked + &__button > &__ham,
+  &__checkbox:checked + &__button:hover > &__ham {
+    background-color: transparent;
+    left: 45%;
+
+    &::before {
+      transform: rotate(45deg);
+      width: 3rem;
+      top: 0;
+      left: 0.5rem;
+    }
+    &::after {
+      transform: rotate(-45deg);
+      width: 3rem;
+      top: 0;
+      left: 0.5rem;
+    }
   }
 }

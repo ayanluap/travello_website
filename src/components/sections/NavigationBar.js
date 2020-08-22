@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavigationBar = () => {
   return (
@@ -10,7 +10,7 @@ const NavigationBar = () => {
         className="navigation__checkbox"
       />
       <label htmlFor="navi-toggle" className="navigation__button">
-        <div className="navigation__ham"></div>
+        <span className="navigation__ham"></span>
       </label>
 
       <div className="navigation__background"></div>
@@ -18,29 +18,33 @@ const NavigationBar = () => {
       <nav className="navigation__nav">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link to="#" className="navigation__link">
+            <NavLink
+              to="#"
+              activeClassName="active"
+              className="navigation__link"
+            >
               01 About Travello
-            </Link>
+            </NavLink>
           </li>
           <li className="navigation__item">
-            <Link to="#" className="navigation__link">
+            <NavLink to="#" className="navigation__link">
               02 Your Benefits
-            </Link>
+            </NavLink>
           </li>
           <li className="navigation__item">
-            <Link to="#" className="navigation__link">
+            <NavLink to="#" className="navigation__link">
               03 Popular Tours
-            </Link>
+            </NavLink>
           </li>
           <li className="navigation__item">
-            <Link to="#" className="navigation__link">
+            <NavLink to="#" className="navigation__link">
               04 Stories
-            </Link>
+            </NavLink>
           </li>
           <li className="navigation__item">
-            <Link to="#" className="navigation__link">
+            <NavLink to="#" className="navigation__link">
               05 Book Now
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

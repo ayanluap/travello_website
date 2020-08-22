@@ -2,7 +2,7 @@ import React from 'react';
 
 const FlipingCards = () => {
   return (
-    <section className="section-tours">
+    <section className="section-tours" id="section-tours">
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="secondary-heading">most popular tours</h2>
       </div>
@@ -33,7 +33,7 @@ const FlipingCards = () => {
                   <p className="card__price-only">only</p>
                   <p className="card__price-value">Rs.999/-</p>
                 </div>
-                <a href="#!" className="btn btn--white">
+                <a href="#popup" className="btn btn--white">
                   Book now!
                 </a>
               </div>
@@ -65,7 +65,7 @@ const FlipingCards = () => {
                   <p className="card__price-only">only</p>
                   <p className="card__price-value">Rs.1,999/-</p>
                 </div>
-                <a href="#!" className="btn btn--white">
+                <a href="#popup" className="btn btn--white">
                   Book now!
                 </a>
               </div>
@@ -97,7 +97,7 @@ const FlipingCards = () => {
                   <p className="card__price-only">only</p>
                   <p className="card__price-value">Rs.2,999/-</p>
                 </div>
-                <a href="#!" className="btn btn--white">
+                <a href="#popup" className="btn btn--white">
                   Book now!
                 </a>
               </div>
